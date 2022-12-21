@@ -16,7 +16,9 @@
 package server
 
 import (
+	"encoding/json"
 	"fmt"
+	"github.com/chaosblade-io/chaos-agent/transport"
 	"net/http"
 
 	"github.com/sirupsen/logrus"
@@ -33,14 +35,38 @@ func NewHttpServer() web.APiServer {
 
 func (this HttpServer) RegisterHandler(handlerName string, handler web.ServerHandler) error {
 	http.HandleFunc("/"+handlerName, func(writer http.ResponseWriter, request *http.Request) {
-		logrus.Infof("request: %+v", request)
-
+		logrus.Infof("RegisterHandler-request: %+v", request)
 		err := request.ParseForm()
 		if err != nil {
 			logrus.Warnf("http handler: %s, get request param wrong, err: %v", handlerName, err)
 			return
 		}
-		result, err := handler.Handle(request.Form["body"][0])
+		form := request.Form
+		type Param struct {
+			Cmd string `json:"cmd"`
+			Ts  string `json:"ts"`
+		}
+		var warp struct {
+			Params Param `json:"params"`
+		}
+		for k, _ := range form {
+			if err := json.Unmarshal([]byte(k), &warp); err != nil {
+				logrus.Warnf("json.Unmarshal-failed err: %v", err)
+				return
+			}
+		}
+
+		param := make(map[string]string)
+		param["ts"] = warp.Params.Ts
+		param["cmd"] = warp.Params.Cmd
+		req := transport.Request{
+			Headers: make(map[string]string),
+			Params:  param,
+		}
+		m, _ := json.Marshal(req)
+
+		//result, err := handler.Handle(request.Form["body"][0])
+		result, err := handler.Handle(string(m))
 		if err != nil {
 			errBytes := fmt.Sprintf("handle %s request err, %v", handlerName, err)
 			// TODO 存在 json 返回的风险
