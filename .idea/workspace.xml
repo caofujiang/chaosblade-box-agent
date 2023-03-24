@@ -76,24 +76,24 @@
       <recent name="$PROJECT_DIR$/build/helm3/chaos-agent/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile.build_chart">
+  <component name="RunManager" selected="Go Build.go build github.com/chaosblade-io/chaos-agent/cmd">
     <configuration name="go build github.com/chaosblade-io/chaos-agent/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="chaos-agent-community" />
       <working_directory value="$PROJECT_DIR$" />
       <parameters value="--transport.endpoint 127.0.0.1:7001 --license 60e70be6f0fd40ba821d663255f160f3 " />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/cmd/chaos_agent.go" />
       <package value="github.com/chaosblade-io/chaos-agent/cmd" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/cmd/chaos_agent.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build github.com/chaosblade-io/chaosblade-box-agent/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="chaos-agent-community" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/cmd/ahas-agent.go" />
       <package value="github.com/chaosblade-io/chaosblade-box-agent/cmd" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/cmd/ahas-agent.go" />
       <method v="2" />
     </configuration>
     <configuration name="build_binary" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
@@ -110,9 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile.build_chart" />
         <item itemvalue="Go Build.go build github.com/chaosblade-io/chaos-agent/cmd" />
-        <item itemvalue="Makefile.build_binary" />
         <item itemvalue="Go Build.go build github.com/chaosblade-io/chaosblade-box-agent/cmd" />
       </list>
     </recent_temporary>
