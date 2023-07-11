@@ -24,7 +24,7 @@ func NewClientConnectHandler(transportClient *transport.TransportClient) *Client
 	}
 }
 
-//Connect to remote
+// Connect to remote
 func (cc *ClientConnectHandler) Start() error {
 	request := transport.NewRequest()
 	request.AddParam("ip", options.Opts.Ip)
@@ -42,6 +42,7 @@ func (cc *ClientConnectHandler) Start() error {
 	request.AddParam("agentMode", options.Opts.AgentMode)
 	request.AddParam("osType", options.Opts.InstallOperator)
 	request.AddParam("cpuNum", strconv.Itoa(runtime.NumCPU()))
+	request.AddParam("tid", options.Opts.Tid)
 
 	request.AddParam("clusterId", options.Opts.ClusterId).
 		AddParam("clusterName", options.Opts.ClusterName)

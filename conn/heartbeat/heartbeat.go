@@ -42,6 +42,7 @@ func (chh *ClientHeartbeatHandler) Start() error {
 			}
 			request.AddParam(options.AppInstanceKeyName, options.Opts.ApplicationInstance)
 			request.AddParam(options.AppGroupKeyName, options.Opts.ApplicationGroup)
+			request.AddParam(options.TenantID, options.Opts.Tid)
 			chh.sendHeartbeat(uri, request)
 		}
 	}()
@@ -67,7 +68,7 @@ func (chh *ClientHeartbeatHandler) sendHeartbeat(uri transport.Uri, request *tra
 		chh.record(false)
 		return
 	}
-	log().Infoln("[heartbeat] success")
+	log().Infoln("[heartbeat] success", request)
 	chh.record(true)
 }
 

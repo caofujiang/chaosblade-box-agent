@@ -1,6 +1,6 @@
 module github.com/chaosblade-io/chaos-agent
 
-go 1.16
+go 1.18
 
 require (
 	github.com/c9s/goprocinfo v0.0.0-20210130143923-c95fcf8c64a8
@@ -25,11 +25,16 @@ require (
 	k8s.io/api v0.19.9
 	k8s.io/apimachinery v0.19.9
 	k8s.io/client-go v12.0.0+incompatible
-	rsc.io/letsencrypt v0.0.3 // indirect
 	sigs.k8s.io/yaml v1.2.0
 )
 
+require rsc.io/letsencrypt v0.0.3 // indirect
+
 replace github.com/docker/docker => github.com/docker/docker v0.7.3-0.20190826074503-38ab9da00309
+
+replace github.com/litmuschaos/chaos-operator => github.com/caofujiang/chaos-operator v1.2.6
+
+replace github.com/c9s/goprocinfo => github.com/caofujiang/goprocinfo v1.0.2
 
 // pinned for github.com/litmuschaos/chaos-operator
 replace (

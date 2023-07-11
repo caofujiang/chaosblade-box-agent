@@ -41,6 +41,7 @@ const (
 const (
 	AppInstanceKeyName = "appInstance"
 	AppGroupKeyName    = "appGroup"
+	TenantID           = "tid"
 
 	DefaultApplicationInstance = "chaos-default-app"
 	DefaultApplicationGroup    = "chaos-default-app-group"
@@ -68,6 +69,7 @@ type Options struct {
 	InstanceId      string
 	Namespace       string
 	License         string
+	Tid             string
 	AgentMode       string
 	InstallOperator string
 
@@ -196,6 +198,9 @@ func (o *Options) AddFlags() {
 	o.Flags.StringVar(&o.Port, "port", "19527", "the agent server port")
 
 	o.Flags.BoolVarP(&o.Help, "help", "h", false, "Print Help text")
+
+	o.Flags.StringVar(&o.Tid, "tid", "", "tenant id")
+
 }
 
 func (o *Options) SetOthersByFlags() {

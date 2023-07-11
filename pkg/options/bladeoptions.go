@@ -43,6 +43,8 @@ var CtlPathFunc = func() string {
 
 // GetChaosBladeVersion
 func GetChaosBladeVersion() (string, error) {
+	return "v1.7.1", nil
+
 	if !tools.IsExist(BladeBinPath) {
 		return "", fmt.Errorf("blade bin file not exist")
 	}
