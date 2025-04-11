@@ -45,5 +45,5 @@ make build_linux
 我们非常欢迎每个 Issue 和 PR，即使一个标点符号，如何参加贡献请阅读 [CONTRIBUTING](CONTRIBUTING.md) 文档，或者通过上述的方式联系我们。
 
 ## 开源许可证
-Chaosblade-exec-os 遵循 Apache 2.0 许可证，详细内容请阅读 [LICENSE](LICENSE)
+chaosblade-box-agent 遵循 Apache 2.0 许可证，详细内容请阅读 [LICENSE](LICENSE)
 

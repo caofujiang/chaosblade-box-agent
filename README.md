@@ -47,5 +47,5 @@ You can also contact us via:
 We welcome every contribution, even if it is just punctuation. See details of [CONTRIBUTING](CONTRIBUTING.md)
 
 ## License
-The chaosblade-exec-os is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
+The chaosblade-box-agent is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
 

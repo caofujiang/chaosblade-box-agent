@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a6002dcc-d6bf-42ab-8ef9-2da15f8f51ff" name="Default Changelist" comment="delete external ip to box">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conn/connect/connect.go" beforeDir="false" afterPath="$PROJECT_DIR$/conn/connect/connect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conn/heartbeat/heartbeat.go" beforeDir="false" afterPath="$PROJECT_DIR$/conn/heartbeat/heartbeat.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README_CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README_CN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/binary_musl/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/build/binary_musl/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/options/bladeoptions.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/options/bladeoptions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/options/options.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/options/options.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/handler/litmuschaos/litmuschaos.go" beforeDir="false" afterPath="$PROJECT_DIR$/web/handler/litmuschaos/litmuschaos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/server/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/web/server/http.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +25,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.19.1" />
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.22.1" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -43,56 +42,58 @@
     <setting file="file://$PROJECT_DIR$/cmd/chaos_agent.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/go.mod" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../pkg/mod/github.com/c9s/goprocinfo@v0.0.0-20210130143923-c95fcf8c64a8/linux/disk.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../pkg/mod/github.com/caofujiang/goprocinfo@v1.0.0/linux/disk.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../pkg/mod/github.com/caofujiang/goprocinfo@v1.0.0/linux/disk_test.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../pkg/mod/github.com/caofujiang/goprocinfo@v1.0.1/linux/disk.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../pkg/mod/github.com/litmuschaos/chaos-operator@v0.0.0-20210601045805-bab1c1c4b082/pkg/client/clientset/versioned/typed/litmuschaos/v1alpha1/fake/fake_chaosengine.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/sdk/go1.19.1/src/syscall/zsyscall_darwin_amd64.go" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/sdk/go1.19.1/src/syscall/ztypes_darwin_amd64.go" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="1xa8XXyjann3oYUXWTfVNMgdppu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
-    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/admin/GolandProjects/chaosblade-box-agent&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;go.vgo&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Go Build.go build github.com/chaosblade-io/chaos-agent/cmd (tid).executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/admin/GolandProjects/chaosblade-box-agent/build/binary_arm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.sdk"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/binary_arm" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/web/handler" />
+      <recent name="$PROJECT_DIR$/build/helm3" />
+      <recent name="$PROJECT_DIR$/build/image_arm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/binary_arm" />
       <recent name="$PROJECT_DIR$/build" />
       <recent name="$PROJECT_DIR$/collector/kubernetes" />
       <recent name="$PROJECT_DIR$/pkg/tools" />
       <recent name="$PROJECT_DIR$/web/server" />
-      <recent name="$PROJECT_DIR$/web/handler/upgrade" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build/helm3" />
-      <recent name="$PROJECT_DIR$/build/image_arm" />
-      <recent name="$PROJECT_DIR$/build/build_arm64" />
-      <recent name="$PROJECT_DIR$/build" />
-      <recent name="$PROJECT_DIR$/build/helm3/chaos-agent/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/chaosblade-io/chaos-agent/cmd (tid)">
@@ -150,6 +151,14 @@
         <item itemvalue="Go Build.go build github.com/chaosblade-io/chaosblade-box-agent/cmd" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.24978.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-GO-243.24978.59" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -312,7 +321,7 @@
   <component name="VgoProject">
     <environment>
       <map>
-        <entry key="GOPROXY" value="https://goproxy.cn,direct" />
+        <entry key="GOPROXY" value="https://goproxy.cn" />
       </map>
     </environment>
     <settings-migrated>true</settings-migrated>
@@ -322,37 +331,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/conn/connect/connect.go</url>
-          <line>91</line>
+          <line>75</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/web/handler/uninstallAgent.go</url>
-          <line>43</line>
+          <line>42</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/web/server/http.go</url>
-          <line>38</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/web/server/http.go</url>
-          <line>43</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/cmd/chaos_agent.go</url>
-          <line>30</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/transport/transport.go</url>
-          <line>64</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/conn/connect/connect.go</url>
-          <line>28</line>
+          <line>12</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>

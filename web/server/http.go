@@ -26,6 +26,11 @@ import (
 	"github.com/chaosblade-io/chaos-agent/web"
 )
 
+// 清空默认的 /debug/vars 注册
+func init() {
+	http.DefaultServeMux = http.NewServeMux()
+}
+
 type HttpServer struct {
 }
 
